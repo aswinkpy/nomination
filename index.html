@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nomination Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <center><h1>NOMINATION FORM</h1></center>
+    <form action="submit_form.php" method="POST" enctype="multipart/form-data">
+        <label for="nominee_name">Name of Nominee:</label>
+        <input type="text" id="nominee_name" name="nominee_name" required>
+
+        <label>Marital Status:</label>
+        <div class="radio-group">
+            <input type="radio" id="single" name="marital_status" value="Single">
+            <label for="single">Single</label>
+            <input type="radio" id="married" name="marital_status" value="Married">
+            <label for="married">Married</label>
+        </div>
+
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" rows="3" required></textarea>
+
+        <label for="aadhaar_number">Aadhaar Number:</label>
+        <input type="text" id="aadhaar_number" name="aadhaar_number" required>
+
+        <label for="relation_with_subscriber">Relation with Subscriber:</label>
+        <textarea id="relation_with_subscriber" name="relation_with_subscriber" rows="2"></textarea>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required>
+
+        <label for="share_payable">Share Payable in Percentage:</label>
+        <input type="number" id="share_payable" name="share_payable" required>
+
+        <label for="place">Place:</label>
+        <textarea id="place" name="place" rows="1"></textarea>
+
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="signature">Signature (Upload):</label>
+        <input type="file" id="signature" name="signature" accept="image/*" required>
+
+        <label for="account_number">Account Number:</label>
+        <input type="text" id="account_number" name="account_number" required>
+
+        <label for="witness_name_1">Witness Name 1:</label>
+        <input type="text" id="witness_name_1" name="witness_name_1" required>
+
+        <label for="witness_address_1">Witness Address 1:</label>
+        <textarea id="witness_address_1" name="witness_address_1" rows="2"></textarea>
+
+        <label for="witness_signature_1">Witness Signature 1 (Upload):</label>
+        <input type="file" id="witness_signature_1" name="witness_signature_1" accept="image/*">
+
+        <label for="witness_name_2">Witness Name 2:</label>
+        <input type="text" id="witness_name_2" name="witness_name_2">
+
+        <label for="witness_address_2">Witness Address 2:</label>
+        <textarea id="witness_address_2" name="witness_address_2" rows="2"></textarea>
+
+        <label for="witness_signature_2">Witness Signature 2 (Upload):</label>
+        <input type="file" id="witness_signature_2" name="witness_signature_2" accept="image/*">
+
+        <button type="submit" class="submit-button">Submit</button>
+    </form>
+</body>
+</html>
